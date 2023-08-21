@@ -9,6 +9,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         PojistenecManagement pojistenecManagement = new PojistenecManagement();
+        System.out.println("-----------------------------------");
+        System.out.println("Evidence pojištěnců");
+        System.out.println("-----------------------------------");
+        System.out.println();
         boolean exit = false;
         while (true) {
             System.out.println("Vyberte si akci:");
