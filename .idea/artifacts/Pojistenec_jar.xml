@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Pojistenec:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Pojistenec_jar</output-path>
+    <root id="archive" name="Pojistenec.jar">
+      <element id="module-output" name="Pojistenec" />
+    </root>
+  </artifact>
+</component>
