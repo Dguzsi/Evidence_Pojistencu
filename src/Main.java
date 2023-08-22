@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        PojistenecManagement pojistenecManagement = new PojistenecManagement();
+        PojistenecManagement pojistenecManagement = new PojistenecManagement(); 
         System.out.println("-----------------------------------");
         System.out.println("Evidence pojištěnců");
         System.out.println("-----------------------------------");
@@ -34,7 +34,7 @@ public class Main {
                     int vek = zadejInt(scanner);
 
 
-                    System.out.println("Zadejte telefoní: ");
+                    System.out.println("Zadejte telefonní číslo: ");
                     int telCislo = zadejInt(scanner);
                     pojistenecManagement.pridejPojistence(jmeno, prijmeni, vek, telCislo);
                     break;
@@ -64,6 +64,12 @@ public class Main {
         }
     }
 
+    /**
+     * Metoda pro zamezení špatného zápisu do konzole. Pokud uživatel zapíše jiný datovy typ než int,
+     * vyjímka vypíše chybu a bude požadovat nový zápis dokud nebude správny.
+     * @param scanner
+     * @return
+     */
     public static int zadejInt(Scanner scanner){
         int cislo = 0;
         while(true){
@@ -77,5 +83,4 @@ public class Main {
         }
         return cislo;
     }
-
 }
